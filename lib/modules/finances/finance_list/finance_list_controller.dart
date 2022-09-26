@@ -35,7 +35,7 @@ class FinanceListController extends OkitoController with ToastMixin {
       setState(() {
         loadingState = LoadingState.failed;
       });
-      this.showErrorToast("Sorry, we were not able to load the data. Please try again later.");
+      //this.showErrorToast("Sorry, we were not able to load the data. Please try again later.");
       return;
     });
   }
