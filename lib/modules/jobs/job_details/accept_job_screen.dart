@@ -32,6 +32,12 @@ class _AcceptJobScreenState extends State<AcceptJobScreen> with ValidationMixin 
             key: controller.applyFormKey,
             child: Column(
               children: [
+                Align(
+                  alignment: Alignment.topLeft,
+                  child : IconButton(onPressed: (){
+                    Navigator.pop(context);
+                  },icon: Icon(Icons.arrow_back_ios,color: Colors.white,),)
+                ),
                 Spacer(flex: 2),
                 KTextField.soft(
                   label: "EXPECTED PAY RATE",
